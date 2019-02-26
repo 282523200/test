@@ -1,0 +1,140 @@
+@charset "UTF-8";
+#type_register {
+  width: 1190px;
+  margin: 0 auto;
+  border: 1px solid #d7d7d7;
+  padding: 40px;
+  padding-right: 0;
+}
+#type_register::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+#type_register .user_login {
+  width: 768px;
+  border-right: 1px solid #ddd;
+  color: #555;
+  float: left;
+  padding: 20px 0;
+}
+#type_register .user_login .tips {
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+}
+#type_register .user_login .tips .red {
+  padding-right: 2px;
+  color: #e62318;
+}
+#type_register .user_login .register_input {
+  height: 40px;
+  line-height: 40px;
+  width: 296px;
+  border: 1px solid #d5d5d5;
+  padding: 0 5px;
+  background-color: #fff;
+}
+#type_register .user_login .success {
+  display: none;
+  background: red url(../img/login_icon2.png) no-repeat 0 -206px;
+  width: 16px;
+  height: 16px;
+  margin-left: 3px;
+}
+#type_register .user_login .error {
+  font-size: 12px;
+  padding: 5px;
+  line-height: 15px;
+  height: 30px;
+  width: 255px;
+  color: #d10000;
+  background: #fff3f3;
+  border: solid 1px #ffe4e4;
+  margin-left: 413px;
+  margin-top: -42px;
+  margin-bottom: 30px;
+}
+#type_register .user_login .readed {
+  line-height: 18px;
+  padding: 10px 0 20px 100px;
+}
+#type_register .user_login .readed label .blue {
+  color: #4a92f5;
+}
+#type_register .user_login .operate {
+  padding-left: 100px;
+}
+#type_register .user_login .operate .regi_btn {
+  color: #fff;
+  cursor: pointer;
+  background: #e62318;
+  width: 308px;
+  height: 42px;
+  border: none;
+  outline: 0;
+}
+#type_register .user_register {
+  color: #555;
+  width: 220px;
+  margin-right: 80px;
+  float: right;
+}
+#type_register .user_register .user_ok_register {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+}
+#type_register .user_register .user_ok_register .logintoreg {
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 32px;
+  background: #cf000e;
+  border: 0;
+  height: 32px;
+  width: 70px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+#type_register .user_register .login_api {
+  /* 登陆口 */
+}
+#type_register .user_register .login_api .img_login2 {
+  text-align: center;
+  padding: 90px 0;
+  border-bottom: 1px solid #eee;
+}
+#type_register .user_register .login_api .img_login2 img {
+  width: 120px;
+  height: 120px;
+}
+#type_register .user_register .login_api .img_login2 p {
+  margin-top: 20px;
+  line-height: 14px;
+}
+#type_register .user_register .login_api .share_login {
+  margin-top: 20px;
+}
+#type_register .user_register .login_api .share_login .api_tips {
+  color: #999;
+  font-size: 12px;
+}
+#type_register .user_register .login_api .share_login .api_from a {
+  height: 28px;
+  width: 28px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+#type_register .user_register .login_api .share_login .api_from .qq {
+  background: url(../img/allPuzzle.png) 0 0 no-repeat;
+}
+#type_register .user_register .login_api .share_login .api_from .sina {
+  background: url(../img/allPuzzle.png) -28px 0 no-repeat;
+}
+#type_register .user_register .login_api .share_login .api_from .alipay {
+  background: url(../img/allPuzzle.png) -86px 0 no-repeat;
+}
+
+/*# sourceMappingURL=registor.css.map */

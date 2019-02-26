@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>registor</title>
+
+</head>
+
+<body>
+  <div id="main">
+    <div class="content">
+      <article>
+        <img alt="开门红" src="https://img001.mllres.com/images/201902/1550390560062066357.png"
+          style="width:620px;height:454px;" class="ad-img">
+      </article>
+      <aside>
+        <div class="line"></div>
+        <ul class="switch-type">
+          <li class="switch-mobile">手机号登录</li>
+          <li class="switch-account">账号登录</li>
+        </ul>
+        <div class="login-form">
+          <!-- 报错 -->
+          <div class="error-date">
+            <i></i>
+            <span>你输入的密码和账户名不匹配，是否忘记，<a href="#">去找回</a></span>
+          </div>
+
+          <!-- 用户名 -->
+          <div class="phone">
+            <label for="phone"></label>
+            <input name="phone" type="text" id="phone" value="">
+          </div>
+          <!-- 密码 -->
+          <div class="password">
+            <label for="password"></label>
+            <input name="password" type="password" autocomplete="off" id="password" value="">
+          </div>
+          <!-- 忘记密码 -->
+          <a class="Right" href="#">忘记密码?</a>
+
+          <!-- 登录按钮 -->
+          <a class="submit-btn" href="javascript:;">登录</a>
+
+        </div>
+        <div class="other-login">
+          <a href="#" class="i-weixin">
+            <i></i>
+            <span>微信登录</span>
+          </a>
+          <a href="#" class="i-app">
+            <i></i>
+            <span>APP扫码</span>
+          </a>
+          <a href="#" class="i-qq">
+            <i></i>
+            <span>QQ登录</span>
+          </a>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+  <script src="js/login.js"></script> 
+</body>
+
+</html>

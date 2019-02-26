@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+@import "tool.scss";
+
+//清浮动 @include clearfix;
+
+$width: 1190px;
+$red: #e62318;
+$gray: #555;
+$gray1: #eee;
+$gray2: #676767;
+$gray3: #ddd;
+$gray4: #aaa;
+$gray5: #fefaf1;
+$gray6: #999;
+
+$white: #fff;
+
+#main {
+    background: $red;
+    padding: 72px 0;
+    min-width: $width;
+
+    .content {
+        width: 1070px;
+        margin: 0 auto;
+
+        @include clearfix;
+
+        article {
+            float: left;
+        }
+
+        aside {
+            float: right;
+            width: 306px;
+            min-height: 371px;
+            background: $white;
+            padding: 22px 27px 20px 27px;
+            position: relative;
+
+            .line {
+                position: absolute;
+                bottom: 68px;
+                border-top: solid 1px #f4f4f4;
+                width: 360px;
+                left: 0;
+            }
+
+            //标题
+            .switch-type {
+                width: 310px;
+                font-size: 16px;
+                color: #888;
+                border-bottom: 1px solid #f4f4f4;
+
+                @include clearfix;
+
+                li {
+                    float: left;
+                    width: 154px;
+                    text-align: center;
+                    margin: 0 0 23px 0;
+                    cursor: pointer;
+                    font-size: 16px;
+                }
+
+                .switch-mobile {
+                    border-right: solid 1px #ddd;
+                    color: #e62318;
+                    font-weight: 700;
+                }
+            }
+
+            //注册区
+            .login-form {
+                width: 306px;
+                overflow: hidden;
+                position: relative;
+
+                .error-date {
+                    color: #e62318;
+                    height: 26px;
+                    line-height: 26px;
+                    font-size: 12px;
+                    padding: 0 8px;
+
+                    i {
+                        float: left;
+                        margin: 6px 6px 0 0;
+                        display: block;
+                        background: url(../img/allPuzzle.png) -156px -30px no-repeat;
+                        width: 15px;
+                        height: 15px;
+                    }
+
+                    span {
+                        display: block;
+                        float: left;
+                        color: #e62318;
+                        height: 26px;
+                        line-height: 26px;
+                        font-size: 12px;
+                    }
+                }
+
+                .phone {
+                    height: 40px;
+                    border: 1px solid #ddd;
+                    overflow: hidden;
+                    line-height: 40px;
+                    margin-bottom: 25px;
+
+                    label {
+                        float: left;
+                        width: 19px;
+                        height: 19px;
+                        background: url(../img/allPuzzle.png) 0 -30px no-repeat;
+                        margin: 10px 16px 10px 11px;
+                    }
+
+                    input {
+                        float: left;
+                        height: 20px;
+                        font-size: 13px;
+                        width: 254px;
+                        border: 0;
+                        padding: 10px 0;
+                    }
+                }
+
+                .password {
+                    height: 40px;
+                    border: 1px solid #ddd;
+                    overflow: hidden;
+                    line-height: 40px;
+                    margin-bottom: 25px;
+
+                    label {
+                        float: left;
+                        width: 19px;
+                        height: 19px;
+                        background: url(../img/allPuzzle.png) -21px -30px no-repeat;
+                        margin: 10px 16px 10px 11px;
+                    }
+
+                    input {
+                        float: left;
+                        height: 20px;
+                        font-size: 13px;
+                        width: 254px;
+                        border: 0;
+                        padding: 10px 0;
+                    }
+                }
+
+                .Right {
+                    float: right;
+                    margin: -12px;
+                    margin-right: 0;
+                }
+
+                .submit-btn {
+                    margin: 44px 0 17px 0;
+                    display: block;
+                    height: 42px;
+                    line-height: 42px;
+                    background-color: #e62318;
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #fff;
+                    border-radius: 3px;
+                }
+            }
+
+            //其他注册
+            .other-login {
+                width: 440px;
+                margin: 46px 0 0 0;
+                @include clearfix;
+
+                a {
+                  margin-top: 10px;
+                    float: left;
+                }
+
+                i {
+                    margin-right: 6px;
+                    vertical-align: middle;
+                    display: inline-block;
+                    width: 28px;
+                    height: 28px;
+                    background: url(../img/allPuzzle.png) no-repeat;
+                }
+
+                span {
+                    font-size: 12px;
+                    padding-right: 13px;
+                    line-height: 12px;
+                    vertical-align: middle;
+                    display: inline-block;
+                    color: #999;
+                }
+
+                .i-weixin {
+                    box-sizing: border-box;
+                    //padding-left: 13px;
+
+                    i {
+                        background-position: -73px -172px;
+                    }
+
+                    span {
+                        border-right: solid 1px #d5d5d5;
+                    }
+                }
+
+                .i-app {
+                    box-sizing: border-box;
+                    padding-left: 13px;
+
+                    i {
+                        background-position: -73px -80px;
+                    }
+
+                    span {
+                        border-right: solid 1px #d5d5d5;
+                    }
+                }
+
+                .i-qq {
+                    box-sizing: border-box;
+                    padding-left: 13px;
+
+                    i {
+                        background-position: -73px -108px;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+}

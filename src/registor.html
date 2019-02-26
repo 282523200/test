@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>registor</title>
+</head>
+
+<body>
+  <div id="type_register">
+
+    <!-- 左边 -->
+    <form class="user_login" id="user_login" method="post" action="php/registor.php">
+
+      <!-- 账户名 -->
+      <p>
+        <label class="tips">
+          <span class="red">*</span>帐户名：
+        </label>
+        <input type="text" name="user_name" id="user_name" class="register_input user_name" autocomplete="off">
+        <span class="success"></span>
+      </p>
+      <div class="error" id="register_username_a" style="display:none">
+        用户名可使用字母、汉字、数字、下划线或其组合，4～20个字符，且不能为纯数字
+      </div>
+
+      <!-- 设置密码 -->
+      <p>
+        <label class="tips">
+          <span class="red">*</span>设置密码:
+        </label>
+        <input type="text" name="password" id="password" class="register_input password" autocomplete="off">
+        <span class="success"></span>
+      </p>
+      <div class="error" id="register_password_a" style="display:none">
+        密码强度：中
+      </div>
+
+      <!-- 确认密码 -->
+      <p>
+        <label class="tips">
+          <span class="red">*</span>确认密码:
+        </label>
+        <input type="text" name="checkpassword" class="register_input checkpassword" autocomplete="off">
+        <span class="success"></span>
+      </p>
+      <div class="error" style="display:none">
+        请确保两次输入的密码一致
+      </div>
+
+      <!-- 手机号码 -->
+      <p>
+        <label class="tips">
+          <span class="red">*</span>手机号码：
+        </label>
+        <input type="text" name="userphone" class="register_input userphone" autocomplete="off">
+        <span class="success"></span>
+      </p>
+      <div class="error" style="display:none">
+        请输入手机号码
+      </div>
+
+      <!-- 阅读协议 -->
+      <p class="readed">
+        <input type="checkbox" id="sms_checked_look" checked="">
+        <label>
+          请阅读《<a href="#" class="blue">美乐乐用户注册协议</a>》
+        </label>
+      </p>
+
+      <!-- 注册按钮 -->
+      <div class="operate">
+        <input type="submit" class="regi_btn submit" name="submit" value="注册">
+      </div>
+
+    </form>
+
+    <!-- 右边 -->
+    <div class="user_register">
+      <div class="user_ok_register">
+        <span>已注册？</span>
+        <a href="#" class="logintoreg">登路</a>
+      </div>
+
+      <!-- 二维码 -->
+      <div class="login_api">
+        <div class="img_login2">
+          <img
+            src="https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQHc7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyeUpzSkVKWndiM2Uxa2hQUHhzMWEAAgQR0HBcAwQAowIA"
+            id="JS_img_ewm">
+          <p>微信扫一扫，快速登录</p>
+        </div>
+
+        <div class="share_login">
+          <span class="api_tips">
+            使用合作账号登录：
+          </span>
+          <br>
+          <span class="api_from">
+            <a href="#" class="qq"></a>
+            <a href="#" class="sina"></a>
+            <a href="#" class="alipay"></a>
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+  <script src="js/jquery.validate.js"></script>
+  <script src="js/registor.js"></script>
+</body>
+
+</html>

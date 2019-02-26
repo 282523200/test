@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+@import "tool.scss";
+
+//清浮动 @include clearfix;
+//单行文字限制宽+省略号 @include ellipsisflag;
+
+//注册区
+#type_register {
+    width: $width;
+    margin: 0 auto;
+    border: 1px solid $gray;
+    padding: 40px;
+    padding-right: 0;
+
+    @include clearfix;
+
+    //左边
+    .user_login {
+        width: 768px;
+        border-right: 1px solid $gray1;
+        color: $gray2;
+        float: left;
+        padding: 20px 0;
+
+        .tips {
+            width: 100px;
+            display: inline-block;
+            text-align: right;
+
+            .red {
+                padding-right: 2px;
+                color: $red;
+            }
+        }
+
+        .register_input {
+            height: 40px;
+            line-height: 40px;
+            width: 296px;
+            border: 1px solid #d5d5d5;
+            padding: 0 5px;
+            background-color: $white;
+        }
+
+        .success {
+            display: none;
+            background: red url(../img/login_icon2.png) no-repeat 0 -206px;
+
+            //display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-left: 3px;
+        }
+
+        .error {
+            font-size: 12px;
+            padding: 5px;
+            line-height: 15px;
+            height: 30px;
+            width: 255px;
+            color: #d10000;
+            background: #fff3f3;
+            border: solid 1px #ffe4e4;
+            margin-left: 413px;
+            margin-top: -42px;
+            margin-bottom: 30px;
+        }
+
+        .readed {
+            #sms_checked_look {}
+
+            line-height: 18px;
+            padding: 10px 0 20px 100px;
+
+            label {
+                .blue {
+                    color: #4a92f5;
+                }
+            }
+        }
+
+        .operate {
+            padding-left: 100px;
+
+            .regi_btn {
+                color: $white;
+                cursor: pointer;
+                background: $red;
+                width: 308px;
+                height: 42px;
+                border: none;
+                outline: 0;
+            }
+        }
+    }
+
+    //右边
+    .user_register {
+        color: $gray2;
+        width: 220px;
+        margin-right: 80px;
+        float: right;
+
+        //title
+        .user_ok_register {
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+
+            .logintoreg {
+                color: $white;
+                display: inline-block;
+                text-align: center;
+                line-height: 32px;
+                background: #cf000e;
+                border: 0;
+                height: 32px;
+                width: 70px;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+        }
+
+        //注册
+        .login_api {
+            //二维码
+            .img_login2 {
+                text-align: center;
+                padding: 90px 0;
+                border-bottom: 1px solid #eee;
+
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+
+                p {
+                    margin-top: 20px;
+                    line-height: 14px;
+                }
+            }
+
+            /* 登陆口 */
+            .share_login {
+                margin-top: 20px;
+
+                .api_tips {
+                    color: #999;
+                    font-size: 12px;
+                }
+
+                .api_from {
+                    a {
+                        height: 28px;
+                        width: 28px;
+                        float: left;
+                        margin-right: 10px;
+                        margin-top: 10px;
+                    }
+
+                    .qq {
+                        background: url(../img/allPuzzle.png) 0 0 no-repeat;
+                    }
+
+                    .sina {
+                        background: url(../img/allPuzzle.png) -28px 0 no-repeat;
+                    }
+
+                    .alipay {
+                        background: url(../img/allPuzzle.png) -86px 0 no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+body, ul, li, dl, dt, dd, p, ol, h1, h2, h3, h4, h5, h6, form, img, table, fieldset, legend, figure, textarea {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+img, fieldset, textarea {
+  border: 0;
+}
+
+caption, em, strong, th, i, b {
+  font-style: normal;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+  font-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input, button, a {
+  outline: none;
+}
+
+body {
+  font: 14px/1.5 Microsoft YaHei;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #e62318;
+}
+
+/*# sourceMappingURL=reset.css.map */

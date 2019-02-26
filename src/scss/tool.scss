@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+//清浮动
+@mixin clearfix {
+    &::after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+}
+
+//单行文字限制宽+省略号
+@mixin ellipsisflag { //要设宽
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+$width: 1190px;
+$red: #e62318;
+$gray: #d7d7d7;
+$gray1: #ddd;
+$gray2: #555;
+$yellow:#faffbd;
+$white:#fff;

@@ -1,0 +1,340 @@
+@charset "utf-8";
+
+@import "tool.scss";
+//清浮动 @include clearfix;
+
+$width: 1190px;
+$red: #e62318;
+$gray: #555;
+$gray1: #eee;
+$gray2: #676767;
+$gray3: #ddd;
+$gray4: #aaa;
+$gray5: #fefaf1;
+$gray6: #999;
+
+$white: #fff;
+
+//section1
+.cart-filter-bar {
+    width: $width;
+    margin: 20px auto 0;
+
+    @include clearfix;
+
+    .cart_all_goods {
+        float: left;
+        margin-right: 40px;
+        font-size: 16px;
+
+        .active {
+            border-color: $red;
+            display: block;
+            padding: 10px 0;
+            border-bottom: 2px solid $red;
+            color: $gray;
+        }
+    }
+
+    .cart_reduce_goods {
+        float: left;
+        margin-right: 40px;
+        font-size: 16px;
+
+        a {
+            cursor: no-drop;
+            display: block;
+            padding: 10px 0;
+            color: $gray;
+        }
+    }
+}
+
+//section2
+.cart_table {
+    width: $width;
+    margin: 0 auto;
+
+    .cart-table-title {
+        background-color: $gray1;
+
+        @include clearfix;
+
+        li {
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            color: $gray2;
+            text-align: center;
+        }
+
+        .input-checked {
+            width: 73px;
+        }
+
+        .select_btn_all {
+            width: 80px;
+        }
+
+        .goods {
+            width: 456px;
+        }
+
+        .price {
+            width: 160px;
+        }
+
+        .number {
+            width: 180px;
+        }
+
+        .money {
+            width: 116px;
+        }
+
+        .edit {
+            width: 125px;
+        }
+    }
+}
+
+//cartinfo
+.shop-cart-info {
+    //@at-root
+    .pt_box {
+        @include clearfix;
+
+        div {
+            float: left;
+            height: 66px;
+            line-height: 66px;
+        }
+
+        .pt_name {
+            text-align: left;
+
+            label {
+                color: $red;
+                font-weight: 700;
+            }
+
+            .mchat {
+                height: 20px;
+                vertical-align: middle;
+                padding: 0 10px 0 26px;
+                border-radius: 10px;
+                border: none;
+                outline: 0;
+                margin-left: 5px;
+                text-align: center;
+                font-size: 12px;
+                color: $white;
+                background: $red url(../img/flow_cart_bg_new.png) no-repeat 7px -18px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    //@at-root
+    .JS_cart_body {
+        border-left: 1px solid $gray3;
+        border-right: 1px solid $gray3;
+        border-bottom: 1px solid $gray3;
+
+        .activity-title-box {
+            height: 37px;
+            text-align: left;
+            line-height: 1;
+            border-top: solid 1px $gray4;
+        }
+
+        ul {
+            background-color: $gray5;
+            padding: 25px 0;
+            height: 80px;
+            border-top: solid 1px $gray3;
+
+            li {
+                float: left;
+                position: relative;
+            }
+
+            .td_checkbox {
+                width: 73px;
+            }
+
+            .information {
+                width: 536px;
+
+                .goods-pic {
+                    float: left;
+                    width: 117px;
+                    height: 76px;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        padding: 1px;
+                        background: $white;
+                        border: 1px solid $gray3;
+                        vertical-align: middle;
+                    }
+                }
+
+                .goods_title {
+                    float: left;
+                    padding-left: 15px;
+                    width: 185px;
+
+                    a {
+                        display: inline-block;
+                        width: 185px;
+                    }
+                }
+            }
+
+            .shop_price {
+                width: 160px;
+                text-align: center;
+
+                .shop_original_price {
+                    color: $gray6;
+                    text-decoration: line-through;
+                }
+            }
+
+            .m_goods_num {
+                box-sizing: border-box;
+                padding-left: 40px;
+                width: 180px;
+
+                .sub {
+                    float: left;
+                    width: 21px;
+                    height: 20px;
+                    background: url(../img/flow_cart_bg_new.png) 0 -149px no-repeat;
+                }
+
+                .JS_cart_num {
+                    float: left;
+                    width: 40px;
+                    height: 16px;
+                    border: 1px solid #ccc;
+                    line-height: 18px;
+                    text-align: center;
+                    background: 0 0;
+                }
+
+                .add {
+                    float: left;
+                    width: 21px;
+                    height: 20px;
+                    background: url(../img/flow_cart_bg_new.png) -21px -149px no-repeat;
+                }
+
+                .unit {
+                    float: left;
+                    height: 20px;
+                    padding-left: 8px;
+                    line-height: 20px;
+                    color: #999;
+                }
+            }
+
+            .goods-money {
+                width: 116px;
+                text-align: center;
+
+                .goods_subtotal {
+                    line-height: 1.5;
+                    font-weight: 700;
+                    color: #555;
+                }
+            }
+
+            .goods_subtotal {
+                width: 123px;
+                text-align: center;
+
+                .color6 {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+//section3
+.cart_extra {
+    width: $width;
+    height: 60px;
+    background: green;
+    margin: 0 auto;
+    background: $gray1;
+
+    .rbn { //多选
+        float: left;
+        padding: 24px 0 23px;
+        width: 15px;
+        height: 13px;
+        margin: 0 10px 0 17px;
+
+        .mock_checkbox_wrap {
+            position: relative;
+            overflow: hidden;
+        }
+    }
+
+    .select_btn {
+        float: left;
+        height: 60px;
+        line-height: 60px;
+        margin-left: 2px;
+
+        a {
+            margin-right: 20px;
+            color: #666;
+        }
+    }
+
+    .lbn {
+        float: right;
+        white-space: nowrap;
+
+        .selected-tip {
+            display: inline-block;
+            height: 60px;
+            color: #666;
+            cursor: pointer;
+
+            .selected-number {
+                color: $red;
+            }
+        }
+
+        .goods_price {
+            display: inline-block;
+            height: 60px;
+            margin-left: 20px;
+            
+        }
+
+        .go-pre-check {
+            display: inline-block;
+            width: 120px;
+            height: 60px;
+            margin-left: 20px;
+
+            .check {
+                width: 120px;
+                height: 60px;
+                border: 0;
+                outline: 0;
+                font-size: 20px;
+                color: $white;
+                background-color: $red;
+                cursor: pointer;
+            }
+        }
+    }
+}

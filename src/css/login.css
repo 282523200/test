@@ -1,0 +1,202 @@
+#main {
+  background: #e62318;
+  padding: 72px 0;
+  min-width: 1190px;
+}
+#main .content {
+  width: 1070px;
+  margin: 0 auto;
+}
+#main .content::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+#main .content article {
+  float: left;
+}
+#main .content aside {
+  float: right;
+  width: 306px;
+  min-height: 371px;
+  background: #fff;
+  padding: 22px 27px 20px 27px;
+  position: relative;
+}
+#main .content aside .line {
+  position: absolute;
+  bottom: 68px;
+  border-top: solid 1px #f4f4f4;
+  width: 360px;
+  left: 0;
+}
+#main .content aside .switch-type {
+  width: 310px;
+  font-size: 16px;
+  color: #888;
+  border-bottom: 1px solid #f4f4f4;
+}
+#main .content aside .switch-type::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+#main .content aside .switch-type li {
+  float: left;
+  width: 154px;
+  text-align: center;
+  margin: 0 0 23px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+#main .content aside .switch-type .switch-mobile {
+  border-right: solid 1px #ddd;
+  color: #e62318;
+  font-weight: 700;
+}
+#main .content aside .login-form {
+  width: 306px;
+  overflow: hidden;
+  position: relative;
+}
+#main .content aside .login-form .error-date {
+  color: #e62318;
+  height: 26px;
+  line-height: 26px;
+  font-size: 12px;
+  padding: 0 8px;
+}
+#main .content aside .login-form .error-date i {
+  float: left;
+  margin: 6px 6px 0 0;
+  display: block;
+  background: url(../img/allPuzzle.png) -156px -30px no-repeat;
+  width: 15px;
+  height: 15px;
+}
+#main .content aside .login-form .error-date span {
+  display: block;
+  float: left;
+  color: #e62318;
+  height: 26px;
+  line-height: 26px;
+  font-size: 12px;
+}
+#main .content aside .login-form .phone {
+  height: 40px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+#main .content aside .login-form .phone label {
+  float: left;
+  width: 19px;
+  height: 19px;
+  background: url(../img/allPuzzle.png) 0 -30px no-repeat;
+  margin: 10px 16px 10px 11px;
+}
+#main .content aside .login-form .phone input {
+  float: left;
+  height: 20px;
+  font-size: 13px;
+  width: 254px;
+  border: 0;
+  padding: 10px 0;
+}
+#main .content aside .login-form .password {
+  height: 40px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+#main .content aside .login-form .password label {
+  float: left;
+  width: 19px;
+  height: 19px;
+  background: url(../img/allPuzzle.png) -21px -30px no-repeat;
+  margin: 10px 16px 10px 11px;
+}
+#main .content aside .login-form .password input {
+  float: left;
+  height: 20px;
+  font-size: 13px;
+  width: 254px;
+  border: 0;
+  padding: 10px 0;
+}
+#main .content aside .login-form .Right {
+  float: right;
+  margin: -12px;
+  margin-right: 0;
+}
+#main .content aside .login-form .submit-btn {
+  margin: 44px 0 17px 0;
+  display: block;
+  height: 42px;
+  line-height: 42px;
+  background-color: #e62318;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 3px;
+}
+#main .content aside .other-login {
+  width: 440px;
+  margin: 46px 0 0 0;
+}
+#main .content aside .other-login::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+#main .content aside .other-login a {
+  margin-top: 10px;
+  float: left;
+}
+#main .content aside .other-login i {
+  margin-right: 6px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url(../img/allPuzzle.png) no-repeat;
+}
+#main .content aside .other-login span {
+  font-size: 12px;
+  padding-right: 13px;
+  line-height: 12px;
+  vertical-align: middle;
+  display: inline-block;
+  color: #999;
+}
+#main .content aside .other-login .i-weixin {
+  box-sizing: border-box;
+}
+#main .content aside .other-login .i-weixin i {
+  background-position: -73px -172px;
+}
+#main .content aside .other-login .i-weixin span {
+  border-right: solid 1px #d5d5d5;
+}
+#main .content aside .other-login .i-app {
+  box-sizing: border-box;
+  padding-left: 13px;
+}
+#main .content aside .other-login .i-app i {
+  background-position: -73px -80px;
+}
+#main .content aside .other-login .i-app span {
+  border-right: solid 1px #d5d5d5;
+}
+#main .content aside .other-login .i-qq {
+  box-sizing: border-box;
+  padding-left: 13px;
+}
+#main .content aside .other-login .i-qq i {
+  background-position: -73px -108px;
+}
+
+/*# sourceMappingURL=login.css.map */

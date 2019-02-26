@@ -1,0 +1,1067 @@
+@charset "utf-8";
+
+@import "tool.scss";
+
+//清浮动 @include clearfix;
+
+//width
+$webwidth: 1200px;
+
+//color
+$blacka: rgba(0, 0, 0, 0.6);
+$blacka1: rgba(0, 0, 0, 0.8);
+$black: #000;
+$dark: #1f1f1f;
+$gray2: #333; //文字
+$gray5: #444;
+$gray6: #666;
+$gray9: #777;
+$gray4: #999;
+$gray3: #a2a2a6;
+$gray8: #ededed;
+$gray10: #c8c8c8;
+$gray7: #f8f8f8;
+$gray: #f0f0f0;
+$gray1: #f5f5f5;
+$white: #fff;
+
+$red: #e62318;
+$pink: #fee0db;
+
+// 顶部广告
+#ADtop {
+    background: $pink;
+
+    div {
+        width: 980px;
+        margin: 0 auto;
+    }
+}
+
+//top
+#top {
+    background-color: $gray7;
+
+    .topwrap {
+        width: $webwidth;
+        line-height: 30px;
+        margin: 0 auto;
+        height: 30px;
+        font-size: 12px;
+
+        //@include clearfix;
+        .fouce {
+            float: left;
+
+            li {
+                float: left;
+
+                a {
+                    color: $gray5;
+                    padding: 0 8px;
+                }
+            }
+
+            .region {
+                margin-right: 5px;
+
+                i {
+                    display: inline-block;
+                    width: 11px;
+                    height: 14px;
+                    background: url(../img/nav.png) 0 -38px no-repeat;
+                    overflow: hidden;
+                    margin: 7px 5px 0 0;
+                    vertical-align: top;
+                }
+            }
+        }
+
+        .custmer {
+            float: right;
+
+            .drop-down {
+                height: 28px;
+                border: solid 1px $gray7;
+                float: left;
+                padding: 0 5px;
+            }
+
+            .drop-down-trigger {
+                background: red;
+                
+            }
+
+            .drop-down-trigger :hover {
+                transform: rotate(-180deg);
+            }
+
+            .arrow {
+                display: inline-block;
+                margin-top: 13px;
+                width: 7px;
+                height: 4px;
+                background: url(../img/nav.png) 0 0 no-repeat;
+                transition: .2s ease-in-out;
+                vertical-align: top;
+            }
+        }
+    }
+}
+
+//search-bar
+#search-bar {
+    .search-bar-wrap {
+        position: relative;
+        width: $webwidth;
+        height: 112px;
+        margin: 0 auto;
+
+        .logo {
+            margin: 26px 12px 0;
+            float: left;
+        }
+
+        .ad-position {
+            width: 252px;
+            height: 61px;
+            float: left;
+            margin-top: 29px;
+            text-align: center;
+        }
+
+        .form-search {
+            width: 490px;
+            position: absolute;
+            left: 445px;
+            top: 30px;
+
+            .form {
+                border: 3px solid $red;
+
+                .input {
+                    outline: 0;
+                    width: 360px;
+                    height: 16px;
+                    line-height: 16px;
+                    padding: 6px 10px;
+                    border: 1px solid $white; //有一项素的误差
+                    //vertical-align: top;
+               
+                }
+
+                .submit {
+                    background: $red;
+                    font-size: 16px;
+                    color: $white;
+                    border: 0;
+                    width: 90px;
+                    height: 30px;
+                    cursor: pointer;
+                    float: right;
+                }
+            }
+        }
+
+        .keyword {
+            position: absolute;
+            top: 75px;
+            left: 445px;
+
+            a {
+                padding-right: 12px;
+            }
+        }
+
+        .top-qrcode {
+            position: absolute;
+            top: 8px;
+            right: 2px;
+        }
+    }
+}
+
+//nav
+#nav {
+    .nav-wrap {
+        margin: 0 auto;
+        width: $webwidth;
+        height: 36px;
+
+        //background: red;
+
+        .category {
+            width: 200px;
+            position: relative;
+            float: left;
+
+            h2 {
+                height: 36px;
+                background: $red;
+                color: $white;
+                line-height: 36px;
+                text-align: center;
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            .category-option { //商品列表
+                width: 200px;
+                padding: 9px 0 9px;
+                background: $blacka1;
+                position: absolute;
+
+                .cat-item {
+                    height: 34px;
+                    line-height: 34px;
+                    vertical-align: top;
+
+                    .txt {
+                        float: left;
+                        color: $gray10;
+                        margin-right: 10px;
+                        font-size: 13px;
+                    }
+
+                    .icon {
+                        float: left;
+                        width: 20px;
+                        height: 20px;
+                        margin: 8px 10px 0 15px;
+                    }
+
+                    .i0 {
+                        background: url(../img/menu.png) -21px -168px no-repeat;
+                    }
+
+                    .i1 {
+                        background: url(../img/menu.png) -21px -147px no-repeat;
+                    }
+
+                    .i2 {
+                        background: url(../img/menu.png) -21px -126px no-repeat;
+                    }
+
+                    .i3 {
+                        background: url(../img/menu.png) -21px -231px no-repeat;
+                    }
+
+                    .i4 {
+                        background: url(../img/menu.png) -21px -210px no-repeat;
+                    }
+
+                    .i5 {
+                        background: url(../img/menu.png) -21px -189px no-repeat;
+                    }
+
+                    .i6 {
+                        background: url(../img/menu.png) -21px -264px no-repeat;
+                    }
+
+                    .i7 {
+                        background: url(../img/menu.png) -21px -42px no-repeat;
+                    }
+
+                    .i8 {
+                        background: url(../img/menu.png) -21px -21px no-repeat;
+                    }
+
+                    .i9 {
+                        background: url(../img/menu.png) -21px 0 no-repeat;
+                    }
+
+                    .i10 {
+                        background: url(../img/menu.png) -21px -105px no-repeat;
+                    }
+
+                    .i11 {
+                        background: url(../img/menu.png) -21px -84px no-repeat;
+                    }
+
+                    .i12 {
+                        background: url(../img/menu.png) -21px -63px no-repeat;
+                    }
+                }
+            }
+        }
+
+        .navigator {
+            float: left;
+            height: 36px;
+
+            li {
+                float: left;
+                font-size: 16px;
+                padding: 0 15px;
+                height: 36px;
+                line-height: 36px;
+            }
+        }
+    }
+}
+
+//banner
+#banner {
+    .banner-content {
+        width: $webwidth;
+        height: 460px;
+        margin: 0 auto;
+    }
+}
+
+//section1
+.section1-wrap {
+    width: $webwidth;
+    height: 300px;
+    margin: 30px auto 0;
+
+    .section1-box {
+        margin-left: -10px;
+    }
+
+    a {
+        display: block;
+        float: left;
+        margin-left: 10px;
+        position: relative;
+        text-align: center;
+
+        .floor-content {
+            position: absolute;
+            top: 40px;
+            width: 100%;
+
+            .represent {
+                background: $white;
+                padding: 10px;
+                width: 200px;
+                height: 90px;
+                margin: 0 auto;
+
+                .div-box {
+                    border: 1px solid $gray8;
+                    padding: 0 22px;
+                    width: 154px;
+                }
+            }
+
+            .describe {
+                padding: 16px 0 5px 0;
+                border-bottom: 1px dashed $gray8;
+                height: 30px;
+                font-size: 22px;
+            }
+
+            .depict {
+                padding: 5px 0 12px 0;
+                height: 19px;
+            }
+        }
+    }
+}
+
+//section5
+.scroll-banner-wrap {
+    width: $webwidth;
+
+    @include clearfix;
+
+    margin: 30px auto 0;
+    position: relative;
+
+    .scroll-banner {
+        .list { //列表框
+            position: absolute;
+            width: 225px;
+            height: 300px;
+            top: 50px;
+            left: 50px;
+            background: $white;
+
+            .name {
+                margin-top: 29px;
+                text-align: center;
+
+                .china-name {
+                    font-size: 40px;
+                    line-height: 48px;
+                }
+
+                .english-name {
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: 3px; //字间距
+               
+                }
+            }
+
+            .type {
+                padding: 31px 15px 0 20px;
+
+                a {
+                    margin: 0 5px 5px 0;
+                    width: 90px;
+                    height: 25px;
+                    color: $gray2;
+                    line-height: 25px;
+                    text-align: center;
+                    background: $gray1;
+                    float: left; //自动block
+               
+                }
+
+                a:hover {
+                    color: $white;
+                    background: $red;
+                }
+            }
+        }
+    }
+
+    .scroll-index {
+        position: absolute;
+        top: 413px - 43;
+        right: 50px;
+
+        li {
+            float: left;
+
+            a {
+                display: block;
+                width: 90px;
+                height: 30px;
+                line-height: 30px;
+                color: $white;
+                background: $blacka;
+                text-align: center;
+            }
+
+            a:hover {
+                color: $black;
+                background: $white;
+            }
+        }
+    }
+
+    .goodslist {
+        margin: 20px auto 0;
+
+        .goodslist-box {
+            margin-left: -20px;
+
+            @include clearfix;
+
+            //background: red;
+       
+        }
+
+        li {
+            float: left;
+            width: 285px;
+            height: 350px;
+            margin-left: 20px;
+            text-align: center;
+            line-height: 20px;
+
+            .name {
+                margin: 18px 0 3px 0;
+            }
+
+            .price {
+                color: $red;
+            }
+        }
+    }
+}
+
+//section12
+#section12 {
+    background: $gray1;
+
+    .section12-wrap {
+        width: $webwidth;
+
+        @include clearfix;
+
+        margin: 30px auto 0;
+
+        .home {
+            color: $gray2;
+            text-align: center;
+            padding-top: 53px;
+
+            h3 {
+                font-size: 30px;
+                display: inline-block;
+                position: relative;
+
+                .l-line {
+                    width: 30px;
+                    height: 1px;
+                    background: $gray3;
+                    position: absolute;
+                    top: 21px;
+                    left: -50px;
+                }
+
+                .r-line {
+                    width: 30px;
+                    height: 1px;
+                    background: $gray3;
+                    position: absolute;
+                    top: 21px;
+                    right: -50px;
+                }
+            }
+
+            p {
+                margin-top: 4px;
+                margin-bottom: 29px;
+            }
+        }
+
+        .home-list {
+            margin-left: -22px;
+
+            li {
+                width: 283px;
+                height: 327px;
+                margin-left: 22px;
+                background: $white;
+                float: left;
+
+                a {
+                    width: 283px;
+                    height: 212px;
+                    display: block;
+                    position: relative;
+                    overflow: hidden;
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+
+                .home-data {
+                    margin: 24px 31px 0 21px;
+
+                    img {
+                        width: 56px;
+                        height: 56px;
+                        float: left;
+                        margin: 6px 18px 0 0;
+                        border-radius: 50%;
+                    }
+
+                    .substance {
+                        float: left;
+                        width: 157px;
+
+                        .name {
+                            color: $gray4;
+                            line-height: 18px;
+                            padding: 3px 0;
+                        }
+
+                        .discribe {
+                            color: $gray5;
+                            line-height: 20px;
+                            height: 40px;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//section13
+#section13 {
+    background: $gray1;
+    overflow: hidden;
+    padding-bottom: 60px;
+
+    .section13-wrap {
+        width: $webwidth;
+        margin: 0 auto;
+
+        .home {
+            color: $gray2;
+            text-align: center;
+            padding-top: 53px;
+
+            h3 {
+                font-size: 30px;
+                display: inline-block;
+                position: relative;
+
+                .l-line {
+                    width: 30px;
+                    height: 1px;
+                    background: $gray3;
+                    position: absolute;
+                    top: 21px;
+                    left: -50px;
+                }
+
+                .r-line {
+                    width: 30px;
+                    height: 1px;
+                    background: $gray3;
+                    position: absolute;
+                    top: 21px;
+                    right: -50px;
+                }
+            }
+        }
+
+        .list {
+            margin-top: 38px;
+            margin-left: -22px;
+
+            li {
+                width: 181px;
+                height: 220px;
+                margin-left: 22px;
+                float: left;
+                position: relative;
+
+                img {
+                    border-radius: 3px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+//section14
+#section14 {
+    background: url(https://static.mllres.com/mll/mpg/index/i/back.jpg) top center no-repeat;
+    background-color: #353741;
+
+    .section14-wrap {
+        background: url(https://static.mllres.com/mll/mpg/index/i/exprBack.jpg) 0 0 no-repeat;
+        background-color: #353741;
+        width: $webwidth;
+        margin: 0 auto;
+
+        .home {
+            color: $gray2;
+            text-align: center;
+            padding-top: 76px;
+
+            h3 {
+                display: inline-block;
+                position: relative;
+
+                a {
+                    font-size: 30px;
+                    color: $white;
+                }
+
+                a:hover {
+                    color: $red;
+                }
+
+                .l-line {
+                    width: 30px;
+                    height: 1px;
+                    background: $gray3;
+                    position: absolute;
+                    top: 21px;
+                    left: -50px;
+                }
+
+                .r-line {
+                    width: 30px;
+                    height: 1px;
+                    background: $gray3;
+                    position: absolute;
+                    top: 21px;
+                    right: -50px;
+                }
+            }
+
+            p {
+                margin-top: 4px;
+                margin-bottom: 29px;
+
+                a {
+                    color: $white;
+                }
+
+                a:hover {
+                    color: $red;
+                }
+            }
+        }
+
+        .expr-box {
+            width: $webwidth;
+            padding-top: 5px;
+
+            .expr-list {
+                margin-left: -20px;
+
+                li {
+                    width: 285px;
+                    height: 410px;
+                    margin-left: 20px;
+                    float: left;
+                    background: $white;
+                    background: $gray1;
+
+                    a {
+                        img {
+                            width: 285px;
+                        }
+                    }
+
+                    .data {
+                        padding: 16px 13px 25px 20px;
+
+                        .expr-name {
+                            font-size: 18px;
+                        }
+
+                        .expr-time {
+                            color: $gray4;
+                            line-height: 17px;
+                        }
+
+                        .expr-phone {
+                            color: $gray6;
+                            line-height: 20px;
+                            margin: 10px 0 9px 0;
+                            height: 20px;
+
+                            i {
+                                margin: 2px 3px 0 0;
+                                background: url(../img/index.png) -87px -252px no-repeat;
+
+                                //这里的路径以css文件为出发点找资源
+                                width: 15px;
+                                height: 16px;
+                                display: inline-block;
+                            }
+                        }
+
+                        .address {
+                            line-height: 20px;
+                            height: 40px;
+                            margin-bottom: 12px;
+                        }
+
+                        .btn {
+                            line-height: 20px;
+                            color: $white;
+                            padding: 10px 75px;
+                            background: $red;
+                            border: 1px solid $red;
+                            display: block;
+                            width: 91px;
+                            margin: 0 7px 0 1px;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .expr-img {
+            img {
+                padding-top: 67px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+//foot
+
+//foot-icon
+.foot-icon {
+    background: $gray7;
+    padding: 35px 0;
+    border-bottom: 1px solid $gray8;
+    text-align: center;
+
+    .foot-icon-wrap {
+        width: $webwidth;
+        margin: 0 auto;
+
+        a {
+            width: 122px;
+            display: inline-block;
+
+            span {
+                padding-top: 20px;
+                display: block;
+            }
+
+            i {
+                width: 50px;
+                height: 50px;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .icon-1 {
+                background: url(../img/footerIcon.png) 0 0 no-repeat;
+            }
+
+            .icon-2 {
+                background: url(../img/footerIcon.png) -50px 0 no-repeat;
+            }
+
+            .icon-3 {
+                background: url(../img/footerIcon.png) -100px 0 no-repeat;
+            }
+
+            .icon-4 {
+                background: url(../img/footerIcon.png) -150px 0 no-repeat;
+            }
+
+            .icon-5 {
+                background: url(../img/footerIcon.png) 0 -50px no-repeat;
+            }
+
+            .icon-6 {
+                background: url(../img/footerIcon.png) -50px -50px no-repeat;
+            }
+
+            .icon-7 {
+                background: url(../img/footerIcon.png) -100px -50px no-repeat;
+            }
+
+            .icon-8 {
+                background: url(../img/footerIcon.png) -150px -50px no-repeat;
+            }
+        }
+    }
+}
+
+//foot-help
+.foot-help {
+    background: $gray7;
+    padding: 35px 0 54px;
+
+    .foot-help-wrap {
+        width: $webwidth;
+        margin: 0 auto;
+
+        @include clearfix;
+
+        .summary {
+            float: left;
+            width: 240px;
+            height: 165px;
+            background: url(../img/footer.png) 0 -100px no-repeat;
+
+            .s1 {
+                line-height: 19px;
+            }
+
+            .s2 {
+                font-size: 20px;
+                color: $red;
+                margin: 5px 0;
+            }
+
+            .s3 {
+                font-size: 12px;
+                color: $gray4;
+                margin-bottom: 30px;
+
+                .red {
+                    color: $red;
+                }
+            }
+
+            .s4 {
+                margin-bottom: 10px;
+
+                a {
+                    font-size: 12px;
+                    display: inline-block;
+                    color: $red;
+                    border: 1px solid $red;
+                    width: 106px;
+                    height: 24px;
+                    text-align: center;
+                    line-height: 24px;
+                    padding-left: 10px;
+                    position: relative;
+
+                    .coord {
+                        display: block;
+                        width: 11px;
+                        height: 14px;
+                        position: absolute;
+                        left: 5px;
+                        top: 5px;
+                        background: url(../img/footer.png) -11px -265px no-repeat;
+                    }
+                }
+            }
+
+            .s5 {
+                margin-bottom: 10px;
+
+                a {
+                    font-size: 12px;
+                    display: inline-block;
+                    color: $red;
+                    border: 1px solid $red;
+                    width: 106px;
+                    height: 24px;
+                    text-align: center;
+                    line-height: 24px;
+                    padding-left: 10px;
+                    position: relative;
+
+                    .mobile {
+                        display: block;
+                        width: 10px;
+                        height: 13px;
+                        position: absolute;
+                        left: 5px;
+                        top: 5px;
+                        background: url(../img/footer.png) 0 -265px no-repeat;
+                    }
+                }
+            }
+        }
+
+        .article {
+            width: 851px;
+            float: right;
+
+            dl {
+                float: left;
+                width: 151px;
+
+                dt {
+                    padding: 3px 0 5px;
+                }
+
+                dd {
+                    a {
+                        display: block;
+                        color: $gray4;
+                        margin-top: 9px;
+                    }
+
+                    a:hover {
+                        color: $red;
+                    }
+                }
+            }
+
+            .weixin {
+                width: 96px;
+
+                dt {
+                    margin-bottom: 6px;
+                }
+            }
+        }
+    }
+}
+
+//foot-copyright
+.foot-copyright {
+    background: $dark;
+    padding: 21px 0 30px;
+
+    .foot-copyright-wrap {
+        color: $gray9;
+        font-size: 12px;
+        width: $webwidth;
+        margin: 0 auto;
+        position: relative;
+
+        .copyright {
+            li {
+                height: 20px;
+                line-height: 20px;
+
+                a {
+                    color: $gray9;
+                }
+
+                a:hover {
+                    color: $red;
+                }
+            }
+        }
+
+        .credit {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 40px;
+
+            li {
+                float: left;
+                height: 40px;
+                padding-left: 15px;
+
+                a {
+                    color: $gray9;
+
+                    i {
+                        display: inline-block;
+                        vertical-align: top;
+                        color: $gray9;
+                        width: 27px;
+                        height: 22px;
+                        margin-top: 12px;
+                        margin-right: 5px;
+                    }
+                }
+
+                a:hover {
+                    color: $red;
+                }
+
+                .icon-1 {
+                    background: url(../img/credit.png) 0 0 no-repeat;
+                }
+
+                .icon-4 {
+                    background: url(../img/credit.png) 0 -69px no-repeat;
+                }
+
+                .icon-2 {
+                    background: url(../img/credit.png) 0 -47px no-repeat;
+                }
+
+                .icon-3 {
+                    background: url(../img/credit.png) 0 -22px no-repeat;
+                }
+
+                span {
+                    vertical-align: middle;
+                    height: 40px;
+                    line-height: 20px;
+                    width: 50px;
+                    display: inline-block;
+                }
+            }
+
+            .spec {
+                span {
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}
