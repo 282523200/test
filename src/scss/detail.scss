@@ -73,17 +73,49 @@
 
         //放大镜1
         .stage {
-            //大图
-            a {
+            position: relative;
+
+            #bf {
+                position: absolute;
+                left: 500px;
+                top: 0;
+                background: blue;
+                width: 400px;
+                height: 400px;
+                overflow: hidden;
+                visibility: hidden;
+
+                p {
+                    position: relative;
+
+                    #bpic {
+                        position: absolute;
+                    }
+                }
+            }
+
+            
+
+            #JS_scale_src {
                 width: 470px;
                 height: 311px;
+                overflow: hidden;
                 display: block;
 
                 img {
                     width: 100%;
                     height: auto;
                 }
+                
             }
+            
+        }
+        #sf {
+            position: absolute;
+            background: orange;
+            width: 5px;
+            height: 50px;
+            visibility: hidden;
         }
 
         //小图外框
