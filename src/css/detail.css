@@ -62,40 +62,30 @@
   float: left;
 }
 #detail .goods-display .stage {
-  position: relative;
-}
-#detail .goods-display .stage #bf {
-  position: absolute;
-  left: 500px;
-  top: 0;
-  background: blue;
-  width: 400px;
-  height: 400px;
-  overflow: hidden;
-  visibility: hidden;
-}
-#detail .goods-display .stage #bf p {
-  position: relative;
-}
-#detail .goods-display .stage #bf p #bpic {
-  position: absolute;
-}
-#detail .goods-display .stage #JS_scale_src {
   width: 470px;
   height: 311px;
   overflow: hidden;
   display: block;
 }
-#detail .goods-display .stage #JS_scale_src img {
+#detail .goods-display .stage .zoom {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+#detail .goods-display .stage .zoom img {
   width: 100%;
   height: auto;
 }
-#detail .goods-display #sf {
+#detail .goods-display .stage #target {
   position: absolute;
-  background: orange;
-  width: 5px;
-  height: 50px;
+  left: 500px;
+  top: 0;
+  height: 500px;
+  width: 500px;
+  border: 1px solid #666;
   visibility: hidden;
+  background: red;
 }
 #detail .goods-display .thumb {
   margin-top: 10px;
@@ -108,6 +98,7 @@
   background: black url(../img/goods.png) 0 -943px no-repeat;
   position: absolute;
   left: 0;
+  z-index: 5;
 }
 #detail .goods-display .thumb .arrow .next {
   width: 30px;
@@ -116,14 +107,19 @@
   background: black url(../img/goods.png) -30px -943px no-repeat;
   position: absolute;
   right: 0;
+  z-index: 5;
 }
 #detail .goods-display .thumb .table {
   margin: 0 auto;
   width: 470px;
   overflow: hidden;
+  position: relative;
+  height: 57px;
 }
 #detail .goods-display .thumb .table #JS_goods_album_stage {
   width: 5000px;
+  position: absolute;
+  height: 57px;
 }
 #detail .goods-display .thumb .table #JS_goods_album_stage::after {
   display: block;

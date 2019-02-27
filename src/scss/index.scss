@@ -77,33 +77,43 @@ $pink: #fee0db;
             }
         }
 
+        //右边
         .custmer {
             float: right;
+            position: relative;
 
+            //我的美乐乐
             .drop-down {
-                height: 28px;
                 border: solid 1px $gray7;
                 float: left;
-                padding: 0 5px;
-            }
 
-            .drop-down-trigger {
-                background: red;
-                
-            }
+                //title
+                .drop-down-trigger {
+                    padding: 0 5px;
+                    height: 28px;
+                    display: block;
 
-            .drop-down-trigger :hover {
-                transform: rotate(-180deg);
-            }
+                    .arrow {
+                        display: inline-block;
+                        margin-top: 13px;
+                        width: 7px;
+                        height: 4px;
+                        background: url(../img/nav.png) 0 0 no-repeat;
+                        transition: .2s ease-in-out;
+                        vertical-align: top;
+                    }
+                }
 
-            .arrow {
-                display: inline-block;
-                margin-top: 13px;
-                width: 7px;
-                height: 4px;
-                background: url(../img/nav.png) 0 0 no-repeat;
-                transition: .2s ease-in-out;
-                vertical-align: top;
+                .drop-down-trigger:hover .arrow {
+                    transform: rotate(-180deg);
+                }
+
+                .drop-down-content1 {
+                    display: none;
+                    position: absolute;
+                    background: blue;
+                    z-index: 1;
+                }
             }
         }
     }
@@ -211,23 +221,42 @@ $pink: #fee0db;
                 background: $blacka1;
                 position: absolute;
 
+                //列表li
                 .cat-item {
                     height: 34px;
                     line-height: 34px;
                     vertical-align: top;
+                    position: relative;
+
+                    //列表li动画css
+                    .sub-cat {
+                        display: none;
+                        position: absolute;
+                        left: 200px;
+
+                        // top: 100px;
+                        width: 400px;
+                        height: 400px;
+                        background: green;
+                        z-index: 3;
+                    }
 
                     .txt {
-                        float: left;
-                        color: $gray10;
-                        margin-right: 10px;
+                        position: absolute;
+                        left: 50px;
                         font-size: 13px;
+
+                        a {
+                            color: $gray10;
+                        }
                     }
 
                     .icon {
-                        float: left;
+                        position: absolute;
                         width: 20px;
                         height: 20px;
-                        margin: 8px 10px 0 15px;
+                        left: 15px;
+                        top: 8px;
                     }
 
                     .i0 {
@@ -281,6 +310,10 @@ $pink: #fee0db;
                     .i12 {
                         background: url(../img/menu.png) -21px -63px no-repeat;
                     }
+                }
+
+                .cat-item:hover {
+                    background: blue;
                 }
             }
         }

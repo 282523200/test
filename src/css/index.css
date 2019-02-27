@@ -40,20 +40,18 @@
 }
 #top .topwrap .custmer {
   float: right;
+  position: relative;
 }
 #top .topwrap .custmer .drop-down {
-  height: 28px;
   border: solid 1px #f8f8f8;
   float: left;
+}
+#top .topwrap .custmer .drop-down .drop-down-trigger {
   padding: 0 5px;
+  height: 28px;
+  display: block;
 }
-#top .topwrap .custmer .drop-down-trigger {
-  background: red;
-}
-#top .topwrap .custmer .drop-down-trigger :hover {
-  transform: rotate(-180deg);
-}
-#top .topwrap .custmer .arrow {
+#top .topwrap .custmer .drop-down .drop-down-trigger .arrow {
   display: inline-block;
   margin-top: 13px;
   width: 7px;
@@ -61,6 +59,15 @@
   background: url(../img/nav.png) 0 0 no-repeat;
   transition: .2s ease-in-out;
   vertical-align: top;
+}
+#top .topwrap .custmer .drop-down .drop-down-trigger:hover .arrow {
+  transform: rotate(-180deg);
+}
+#top .topwrap .custmer .drop-down .drop-down-content1 {
+  display: none;
+  position: absolute;
+  background: blue;
+  z-index: 1;
 }
 
 #search-bar .search-bar-wrap {
@@ -150,18 +157,31 @@
   height: 34px;
   line-height: 34px;
   vertical-align: top;
+  position: relative;
+}
+#nav .nav-wrap .category .category-option .cat-item .sub-cat {
+  display: none;
+  position: absolute;
+  left: 200px;
+  width: 400px;
+  height: 400px;
+  background: green;
+  z-index: 3;
 }
 #nav .nav-wrap .category .category-option .cat-item .txt {
-  float: left;
-  color: #c8c8c8;
-  margin-right: 10px;
+  position: absolute;
+  left: 50px;
   font-size: 13px;
 }
+#nav .nav-wrap .category .category-option .cat-item .txt a {
+  color: #c8c8c8;
+}
 #nav .nav-wrap .category .category-option .cat-item .icon {
-  float: left;
+  position: absolute;
   width: 20px;
   height: 20px;
-  margin: 8px 10px 0 15px;
+  left: 15px;
+  top: 8px;
 }
 #nav .nav-wrap .category .category-option .cat-item .i0 {
   background: url(../img/menu.png) -21px -168px no-repeat;
@@ -201,6 +221,9 @@
 }
 #nav .nav-wrap .category .category-option .cat-item .i12 {
   background: url(../img/menu.png) -21px -63px no-repeat;
+}
+#nav .nav-wrap .category .category-option .cat-item:hover {
+  background: blue;
 }
 #nav .nav-wrap .navigator {
   float: left;

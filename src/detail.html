@@ -14,40 +14,40 @@
   <ul id="cat-nav">
 
     <li class="bitem">
-      <a class="bread-link" href="#">首页</a>
+      <a class="bread-link" href="javascript:;">首页</a>
       <i class="arrow-r"></i>
     </li>
 
     <li class="bitem">
-      <a class="bread-link" href="#">建材</a>
+      <a class="bread-link" href="javascript:;">建材</a>
       <i class="arrow-r"></i>
     </li>
 
     <li class="bitem">
-      <a class="drop-tit" href="#">灯饰照明<i class="arrow-d"></i></a>
+      <a class="drop-tit" href="javascript:;">灯饰照明<i class="arrow-d"></i></a>
       <!-- 下拉菜单 -->
       <div class="bread-drop" style="display:none">
-        <a href="#" target="_blank" title="卫浴用品">卫浴用品</a>
-        <a href="#" target="_blank" title="墙地面材料">墙地面材料</a>
-        <a href="#" target="_blank" title="灯饰照明">灯饰照明</a>
-        <a href="#" target="_blank" title="家装五金">家装五金</a>
-        <a href="#" target="_blank" title="生活电器">生活电器</a>
-        <a href="#" target="_blank" title="厨房用品">厨房用品</a>
+        <a href="javascript:;" target="_blank" title="卫浴用品">卫浴用品</a>
+        <a href="javascript:;" target="_blank" title="墙地面材料">墙地面材料</a>
+        <a href="javascript:;" target="_blank" title="灯饰照明">灯饰照明</a>
+        <a href="javascript:;" target="_blank" title="家装五金">家装五金</a>
+        <a href="javascript:;" target="_blank" title="生活电器">生活电器</a>
+        <a href="javascript:;" target="_blank" title="厨房用品">厨房用品</a>
       </div>
       <i class="arrow-r"></i>
     </li>
 
 
     <li class="bitem">
-      <a class="drop-tit" href="#">吸顶灯<i class="arrow-d"></i></a>
+      <a class="drop-tit" href="javascript:;">吸顶灯<i class="arrow-d"></i></a>
       <!-- 下拉菜单 -->
       <div class="bread-drop" style="display:none">
-        <a href="#" target="_blank" title="卫浴用品">卫浴用品</a>
-        <a href="#" target="_blank" title="墙地面材料">墙地面材料</a>
-        <a href="#" target="_blank" title="灯饰照明">灯饰照明</a>
-        <a href="#" target="_blank" title="家装五金">家装五金</a>
-        <a href="#" target="_blank" title="生活电器">生活电器</a>
-        <a href="#" target="_blank" title="厨房用品">厨房用品</a>
+        <a href="javascript:;" target="_blank" title="卫浴用品">卫浴用品</a>
+        <a href="javascript:;" target="_blank" title="墙地面材料">墙地面材料</a>
+        <a href="javascript:;" target="_blank" title="灯饰照明">灯饰照明</a>
+        <a href="javascript:;" target="_blank" title="家装五金">家装五金</a>
+        <a href="javascript:;" target="_blank" title="生活电器">生活电器</a>
+        <a href="javascript:;" target="_blank" title="厨房用品">厨房用品</a>
       </div>
       <i class="arrow-r"></i>
     </li>
@@ -58,77 +58,66 @@
   <!-- 详情 -->
   <div id="detail">
 
-    <!-- 左 -->
+    <!-- 左栏 -->
     <div class="goods-display">
+
       <!-- 放大镜1 -->
       <div class="stage">
         <!-- 大图 -->
-        <a href="#" id="JS_scale_src">
-          <div id="bf">
-            <p>
-              <img src="" id="bpic" alt="">
-            </p>
-
-          </div>
-          <div id="sf"></div>
-          <img
-            src="https://image.meilele.com/images/small/357/width/520/height/344/mode/1/encrypt/11e9e118cc366490a77b618b3ff5f771/path/YKkxtD0+l8CT6mdTP0jUTosXyzGqRaYb484nDncYwHOJQIzzFuZPA6V9fms3jAaI9t7cFJXbhHY9TxUi1fhi8Q==.jpg"
-            alt="">
-        </a>
+        <div id="zoom" class="zoom">
+          <img src="" alt="">
+        </div>
+        <div id="target"></div>
       </div>
 
       <!-- 小图 -->
-      <div class="thumb">
+      <div class="thumb" id="thumb">
         <!-- 箭头 -->
         <div class="arrow">
-          <a href="#" class="pre"></a>
-          <a href="#" class="next"></a>
+          <a href="javascript:;" class="pre" id="pre"></a>
+          <a href="javascript:;" class="next" id="next"></a>
         </div>
 
         <!-- 缩略图列表这层限制宽 -->
         <div class="table">
           <!-- 这里设置无限宽 -->
           <ul id="JS_goods_album_stage">
-            <li class="album_item">
-              <a href="#">
+            <!-- js生成 -->
+            <!--  <li class="album_item">
+              <a href="javascript:;">
                 <img
                   src="https://image.meilele.com/images/small/357/width/520/height/344/mode/1/encrypt/11e9e118cc366490a77b618b3ff5f771/path/YKkxtD0+l8CT6mdTP0jUTosXyzGqRaYb484nDncYwHOJQIzzFuZPA6V9fms3jAaI9t7cFJXbhHY9TxUi1fhi8Q==.jpg"
                   alt="">
               </a>
             </li>
             <li class="album_item">
-              <a href="#">
+              <a href="javascript:;">
                 <img
                   src="https://image.meilele.com/images/small/357/width/520/height/344/mode/1/encrypt/11e9e118cc366490a77b618b3ff5f771/path/YKkxtD0+l8CT6mdTP0jUTosXyzGqRaYb484nDncYwHOJQIzzFuZPA6V9fms3jAaI9t7cFJXbhHY9TxUi1fhi8Q==.jpg"
                   alt="">
               </a>
             </li>
             <li class="album_item">
-              <a href="#">
+              <a href="javascript:;">
                 <img
                   src="https://image.meilele.com/images/small/357/width/520/height/344/mode/1/encrypt/11e9e118cc366490a77b618b3ff5f771/path/YKkxtD0+l8CT6mdTP0jUTosXyzGqRaYb484nDncYwHOJQIzzFuZPA6V9fms3jAaI9t7cFJXbhHY9TxUi1fhi8Q==.jpg"
                   alt="">
               </a>
             </li>
             <li class="album_item">
-              <a href="#">
+              <a href="javascript:;">
                 <img
                   src="https://image.meilele.com/images/small/357/width/520/height/344/mode/1/encrypt/11e9e118cc366490a77b618b3ff5f771/path/YKkxtD0+l8CT6mdTP0jUTosXyzGqRaYb484nDncYwHOJQIzzFuZPA6V9fms3jAaI9t7cFJXbhHY9TxUi1fhi8Q==.jpg"
                   alt="">
               </a>
             </li>
             <li class="album_item">
-              <a href="#">
+              <a href="javascript:;">
                 <img
                   src="https://image.meilele.com/images/small/357/width/520/height/344/mode/1/encrypt/11e9e118cc366490a77b618b3ff5f771/path/YKkxtD0+l8CT6mdTP0jUTosXyzGqRaYb484nDncYwHOJQIzzFuZPA6V9fms3jAaI9t7cFJXbhHY9TxUi1fhi8Q==.jpg"
                   alt="">
               </a>
-            </li>
-
-
-
-
-
+            </li> -->
           </ul>
         </div>
       </div>
@@ -218,10 +207,10 @@
     <!-- 中 -->
     <div class="goods-panel">
       <h4 class="title">
-        <a href="#">[良品light]</a>
+        <a href="javascript:;">[良品light]</a>
         现代LED吸顶灯 客厅卧室灯具 540mm 黑+白色
       </h4>
-      <a href="#">
+      <a href="javascript:;">
         <img src="https://image.meilele.com/images/201902/1550335727887913032.jpg" alt="">
       </a>
       <table class="price">
@@ -265,10 +254,9 @@
 
         </dd>
       </dl>
-
       <dl class="btns">
         <dd id="JS_panel_btn_box">
-          <a id="JS_goods_panel_add" " href="cart.html" title="加入购物车"
+          <a id="JS_goods_panel_add" " href=" http://10.31.162.184/mll/src/cart.html" title="加入购物车"
             class="add normal JS_addToCart shop_normal"><i></i>加入购物车</a>
         </dd>
       </dl>
@@ -291,6 +279,8 @@
   </div>
   <script src="js/jquery.js"></script>
   <script src="js/cookie.js"></script>
+  <script src="js/jquery.mThumbnailScroller.js"></script>
+  <script src='js/jquery.zoom.js'></script>
   <script src="js/detail.js"></script>
 </body>
 

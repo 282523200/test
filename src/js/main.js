@@ -1,3 +1,5 @@
+
+
 //cookie存储
 ; (function () { //
   function addcookie(key, value, days) {
@@ -34,9 +36,9 @@
 
 })();
 
-
+//生成商品列表
 ; (function () {
-  ////生成商品列表
+
   $.ajax({
     url: 'php/index.php',
     dataType: 'json'
@@ -44,10 +46,10 @@
     var strhtml = '<ul class="goodslist-box">';
     $.each(data, function (index, value) {
       var url_sy = value.url.split(",")[0]; //多个地址去第一个
-      console.log(url_sy)
       strhtml +=
+     
         `<li>
-           <a href="http://localhost/mll/src/detail.html?gid=${value.gid}">
+           <a href="http://10.31.162.184/mll/src/detail.html?gid=${value.gid}">
             <img src="${url_sy}" alt="" index="${value.gid}" style="width:285px;height:285px"></a>
             <p class="name">
               <a href="#">${value.title}</a>
@@ -68,3 +70,42 @@
 
   })
 })();
+
+//商品列表弹框
+; (function () {
+  $('.cat-item').hover(function () {
+    //显示
+    $(this).find('.sub-cat').css("display", "block");
+    //文字颜色
+    $(this).find('.txt a').css("color", "white");
+    //文字位置
+    $(this).find('.txt').css("left", "52px");
+    //图标
+    $(this).find('i').css("left", "17px");
+  }, function () {
+    $(this).find('.sub-cat').css("display", "none");
+    $(this).find('.txt a').css("color", "#c8c8c8");
+    //图标
+    $(this).find('i').css("left", "15px");
+    //文字位置
+    $(this).find('.txt').css("left", "50px");
+  });
+})();
+
+
+
+//top下拉
+; (function () {
+  $('.a1').hover(function () {
+    $('.drop-down-content1').show();
+  }, function () {
+    $('.drop-down-content1').hide();
+  });
+
+  $('.drop-down-content1').hover(function () {
+    $('.drop-down-content1').show();
+  }, function () {
+    $('.drop-down-content1').hide();
+  });
+})();
+
