@@ -58,13 +58,17 @@
   width: 306px;
   overflow: hidden;
   position: relative;
+  position: relative;
 }
 #main .content aside .login-form .error-date {
+  display: none;
+  position: absolute;
   color: #e62318;
   height: 26px;
   line-height: 26px;
   font-size: 12px;
-  padding: 0 8px;
+  top: 6px;
+  left: 6px;
 }
 #main .content aside .login-form .error-date i {
   float: left;
@@ -87,6 +91,7 @@
   border: 1px solid #ddd;
   overflow: hidden;
   line-height: 40px;
+  margin-top: 46px;
   margin-bottom: 25px;
 }
 #main .content aside .login-form .phone label {

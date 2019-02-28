@@ -19,7 +19,7 @@
           $clonebox.find('.shop_price').find('strong').html(value.price); //单价
           
           $clonebox.find('.JS_cart_num').val(count);  //商品数量
-          console.log(value.price * count);
+          //console.log(value.price * count);
           //计算每个商品的价格。
           $clonebox.find('.goods_subtotal1').find('.JS_goods_subtotal').html((value.price * count).toFixed(2));
           $clonebox.css('display', 'block');
@@ -60,6 +60,8 @@
     var $sum = 0;
     var $count = 0;
     $('.onelist:visible').each(function (index, element) {
+      console.log($(element));
+      
       if ($(element).find('.goods_select').prop('checked')) {
         //数量
         $sum += parseInt($(element).find('.m_goods_num').find('input').val());

@@ -11,57 +11,45 @@
 
 <body>
   <div id="type_register">
-
+<!--  -->
     <!-- 左边 -->
-    <form class="user_login" id="user_login" method="post" action="php/registor.php">
+    <form class="user_login" id="user_login" method="post" action="http://10.31.162.184/mll/src/php/registor.php">
 
       <!-- 账户名 -->
       <p>
-        <label class="tips">
+        <label class="tips" for="username">
           <span class="red">*</span>帐户名：
         </label>
-        <input type="text" name="user_name" id="user_name" class="register_input user_name" autocomplete="off">
-        <span class="success"></span>
+        <input type="text" name="username" id="username" class="register_input username">
       </p>
-      <div class="error" id="register_username_a" style="display:none">
-        用户名可使用字母、汉字、数字、下划线或其组合，4～20个字符，且不能为纯数字
-      </div>
+
 
       <!-- 设置密码 -->
       <p>
         <label class="tips">
           <span class="red">*</span>设置密码:
         </label>
-        <input type="text" name="password" id="password" class="register_input password" autocomplete="off">
-        <span class="success"></span>
+        <input type="text" name="password" id="password" class="register_input password">
       </p>
-      <div class="error" id="register_password_a" style="display:none">
-        密码强度：中
-      </div>
+
 
       <!-- 确认密码 -->
       <p>
         <label class="tips">
           <span class="red">*</span>确认密码:
         </label>
-        <input type="text" name="checkpassword" class="register_input checkpassword" autocomplete="off">
-        <span class="success"></span>
+        <input type="text" name="checkpassword" class="register_input checkpassword" id="checkpassword">
       </p>
-      <div class="error" style="display:none">
-        请确保两次输入的密码一致
-      </div>
+
 
       <!-- 手机号码 -->
       <p>
         <label class="tips">
           <span class="red">*</span>手机号码：
         </label>
-        <input type="text" name="userphone" class="register_input userphone" autocomplete="off">
-        <span class="success"></span>
+        <input type="text" name="userphone" class="register_input userphone" id="userphone">
       </p>
-      <div class="error" style="display:none">
-        请输入手机号码
-      </div>
+
 
       <!-- 阅读协议 -->
       <p class="readed">
@@ -111,9 +99,9 @@
     </div>
 
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
-  <script src="js/jquery.validate.js"></script>
-  <script src="js/registor.js"></script>
+  <script src="http://10.31.162.184/mll/src/js/jquery.js"></script>
+  <script src="http://10.31.162.184/mll/src/js/jquery.validate.js"></script>
+  <script src="http://10.31.162.184/mll/src/js/registor.js"></script> 
 </body>
 
 </html>

@@ -974,13 +974,17 @@ a:hover {
   width: 306px;
   overflow: hidden;
   position: relative;
+  position: relative;
 }
 #main .content aside .login-form .error-date {
+  display: none;
+  position: absolute;
   color: #e62318;
   height: 26px;
   line-height: 26px;
   font-size: 12px;
-  padding: 0 8px;
+  top: 6px;
+  left: 6px;
 }
 #main .content aside .login-form .error-date i {
   float: left;
@@ -1003,6 +1007,7 @@ a:hover {
   border: 1px solid #ddd;
   overflow: hidden;
   line-height: 40px;
+  margin-top: 46px;
   margin-bottom: 25px;
 }
 #main .content aside .login-form .phone label {
@@ -1134,42 +1139,33 @@ a:hover {
   float: left;
   padding: 20px 0;
 }
-#type_register .user_login .tips {
+#type_register .user_login p {
+  margin-bottom: 20px;
+  position: relative;
+  width: 414px;
+  height: 40px;
+}
+#type_register .user_login p .tips {
   width: 100px;
   display: inline-block;
   text-align: right;
 }
-#type_register .user_login .tips .red {
+#type_register .user_login p .tips .red {
   padding-right: 2px;
   color: #e62318;
 }
-#type_register .user_login .register_input {
-  height: 40px;
-  line-height: 40px;
-  width: 296px;
-  border: 1px solid #d5d5d5;
-  padding: 0 5px;
-  background-color: #fff;
-}
-#type_register .user_login .success {
-  display: none;
-  background: red url(../img/login_icon2.png) no-repeat 0 -206px;
-  width: 16px;
-  height: 16px;
-  margin-left: 3px;
-}
-#type_register .user_login .error {
-  font-size: 12px;
-  padding: 5px;
+#type_register .user_login p .error {
+  position: absolute;
+  left: 420px;
+  top: 0;
   line-height: 15px;
   height: 30px;
   width: 255px;
+  padding: 5px;
   color: #d10000;
-  background: #fff3f3;
+  font-size: 12px;
   border: solid 1px #ffe4e4;
-  margin-left: 413px;
-  margin-top: -42px;
-  margin-bottom: 30px;
+  opacity: 0.4;
 }
 #type_register .user_login .readed {
   line-height: 18px;
@@ -1189,6 +1185,46 @@ a:hover {
   height: 42px;
   border: none;
   outline: 0;
+}
+#type_register .user_login #username {
+  height: 40px;
+  line-height: 40px;
+  width: 296px;
+  border: 1px solid #d5d5d5;
+  padding: 0 5px;
+  background-color: #fff;
+  position: relative;
+  left: 0;
+}
+#type_register .user_login #password {
+  height: 40px;
+  line-height: 40px;
+  width: 296px;
+  border: 1px solid #d5d5d5;
+  padding: 0 5px;
+  background-color: #fff;
+  position: relative;
+  left: 0;
+}
+#type_register .user_login #checkpassword {
+  height: 40px;
+  line-height: 40px;
+  width: 296px;
+  border: 1px solid #d5d5d5;
+  padding: 0 5px;
+  background-color: #fff;
+  position: relative;
+  left: 0;
+}
+#type_register .user_login #userphone {
+  height: 40px;
+  line-height: 40px;
+  width: 296px;
+  border: 1px solid #d5d5d5;
+  padding: 0 5px;
+  background-color: #fff;
+  position: relative;
+  left: 0;
 }
 #type_register .user_register {
   color: #555;

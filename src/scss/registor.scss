@@ -23,53 +23,40 @@
         float: left;
         padding: 20px 0;
 
-        .tips {
-            width: 100px;
-            display: inline-block;
-            text-align: right;
+        p {
+            margin-bottom: 20px;
+            position: relative;
+            width: 414px;
+            height: 40px;
 
-            .red {
-                padding-right: 2px;
-                color: $red;
+            //第一个label
+            .tips {
+                width: 100px;
+                display: inline-block;
+                text-align: right;
+
+                .red {
+                    padding-right: 2px;
+                    color: $red;
+                }
+            }
+
+            .error {
+                position: absolute;
+                left: 420px;
+                top: 0;
+                line-height: 15px;
+                height: 30px;
+                width: 255px;
+                padding: 5px;
+                color: #d10000;
+                font-size: 12px;
+                border: solid 1px #ffe4e4;
+                opacity: 0.4;
             }
         }
 
-        .register_input {
-            height: 40px;
-            line-height: 40px;
-            width: 296px;
-            border: 1px solid #d5d5d5;
-            padding: 0 5px;
-            background-color: $white;
-        }
-
-        .success {
-            display: none;
-            background: red url(../img/login_icon2.png) no-repeat 0 -206px;
-
-            //display: inline-block;
-            width: 16px;
-            height: 16px;
-            margin-left: 3px;
-        }
-
-        .error {
-            font-size: 12px;
-            padding: 5px;
-            line-height: 15px;
-            height: 30px;
-            width: 255px;
-            color: #d10000;
-            background: #fff3f3;
-            border: solid 1px #ffe4e4;
-            margin-left: 413px;
-            margin-top: -42px;
-            margin-bottom: 30px;
-        }
-
         .readed {
-            #sms_checked_look {}
-
             line-height: 18px;
             padding: 10px 0 20px 100px;
 
@@ -92,6 +79,50 @@
                 border: none;
                 outline: 0;
             }
+        }
+
+        #username {
+            height: 40px;
+            line-height: 40px;
+            width: 296px;
+            border: 1px solid #d5d5d5;
+            padding: 0 5px;
+            background-color: $white;
+            position: relative;
+            left: 0;
+        }
+
+        #password {
+            height: 40px;
+            line-height: 40px;
+            width: 296px;
+            border: 1px solid #d5d5d5;
+            padding: 0 5px;
+            background-color: $white;
+            position: relative;
+            left: 0;
+        }
+
+        #checkpassword {
+            height: 40px;
+            line-height: 40px;
+            width: 296px;
+            border: 1px solid #d5d5d5;
+            padding: 0 5px;
+            background-color: $white;
+            position: relative;
+            left: 0;
+        }
+
+        #userphone {
+            height: 40px;
+            line-height: 40px;
+            width: 296px;
+            border: 1px solid #d5d5d5;
+            padding: 0 5px;
+            background-color: $white;
+            position: relative;
+            left: 0;
         }
     }
 

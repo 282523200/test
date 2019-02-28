@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <form  id="ff" action="https://cn.bing.com/" method="POST">
+    <input type="submit" value="提交">
+  </form>
+
+  <script src="http://10.31.162.184/mll/src/js/jquery.js"></script>
+  <script src="http://10.31.162.184/mll/src/js/jquery.validate.js"></script>
+
+  <script>
+    $(function () {
+      $("#ff").validate({
+        debug:true
+      });
+    })
+
+  </script>
+</body>
+
+</html>

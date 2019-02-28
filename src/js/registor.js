@@ -1,13 +1,14 @@
 ; (function () {
-  
+
   $(function () {
     $('#user_login').validate({
+
+
       rules: {
-        user_name: {
+        username: {
           required: true,
           minlength: 2,
-          maxlength: 20
-
+          maxlength: 20,
 
         },
         password: {
@@ -16,24 +17,23 @@
         },
         checkpassword: {
           required: true,
-          equalTo: '#password'
+          equalTo: '#checkpassword' //id password
         },
         userphone: {
           required: true,
-          isMobile: true
-          remote: { //返回true false
+          isMobile: true,
+          remote: {
             type: 'post',
-            url: 'php/registor.php'
-            
+            url: 'http://10.31.162.184/mll/src/php/registor.php'
           }
         }
       },
+
       messages: {
-        user_name: {
-          required: '<em class="err">用户名不能为空</em>',
+        username: {
+          required: '用户名不能为空',
           minlength: '用户名不能小于2',
-          maxlength: '用户名不能大于10',
-          remote: '<em class="err">用户名已存在</em>'
+          maxlength: '用户名不能大于10'
         },
         password: {
           required: '密码不能为空',
@@ -46,9 +46,10 @@
         userphone: {
           required: '电子邮箱不能为空',
           isMobile: '你输入的格式有误',
-          remote:'11'
+          remote: '手机号码已经存在'
         }
       }
+
 
     });
   });
@@ -64,12 +65,12 @@
     success: function (label) {
       console.log(1);
       label.text('√').css('color', 'green').addClass('valid');
-      
+
     }
   });
-$('.regi_btn').on('click',function(){
-  addcookie('phonenum', $('.userphone').val(),10);
-});
+  $('.regi_btn').on('click', function () {
+    addcookie('phonenum', $('.userphone').val(), 10);
+  });
 
 
   function addcookie(key, value, days) {
@@ -77,5 +78,6 @@ $('.regi_btn').on('click',function(){
     date.setDate(date.getDate() + days);
     document.cookie = `${key} = ${encodeURI(value)}; expires = ${date}`;
   }
+
 
 })();
